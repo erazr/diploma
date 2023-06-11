@@ -1,0 +1,30 @@
+.chat-loader {
+  border: 4px solid #3a4c5e;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+.chat-loader {
+  border: 4px solid #3a4c5e;
+  border-left-color: transparent;
+  width: 36px;
+  height: 36px;
+}
+
+.chat-loader {
+  border: 4px solid #3a4c5e;
+  border-left-color: transparent;
+  width: 36px;
+  height: 36px;
+  animation: spin89345 1s linear infinite;
+}
+
+@keyframes spin89345 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

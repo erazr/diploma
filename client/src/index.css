@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "gg sans Normal";
+  src: url("assets/fonts/ggsans-Normal.eot");
+  src: local("gg sans Normal"), local("ggsans-Normal"),
+    url("assets/fonts/ggsans-Normal.eot?#iefix") format("embedded-opentype"),
+    url("assets/fonts/ggsans-Normal.woff2") format("woff2"),
+    url("assets/fonts/ggsans-Normal.woff") format("woff"),
+    url("assets/fonts/ggsans-Normal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "gg sans";
+  src: url("assets/fonts/ggsans-Medium.eot");
+  src: local("gg sans Medium"), local("ggsans-Medium"),
+    url("assets/fonts/ggsans-Medium.eot?#iefix") format("embedded-opentype"),
+    url("assets/fonts/ggsans-Medium.woff2") format("woff2"),
+    url("assets/fonts/ggsans-Medium.woff") format("woff"),
+    url("assets/fonts/ggsans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "gg sans";
+  src: url("assets/fonts/ggsans-Semibold.eot");
+  src: local("gg sans SemiBold"), local("ggsans-Semibold"),
+    url("assets/fonts/ggsans-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("assets/fonts/ggsans-Semibold.woff2") format("woff2"),
+    url("assets/fonts/ggsans-Semibold.woff") format("woff"),
+    url("assets/fonts/ggsans-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* * {
+  outline: 1px solid red;
+} */
+
+#root {
+  font-family: "gg sans Normal";
+  font-size: 16px;
+  font-weight: normal;
+  color: #e5eaef;
+  background-color: #0f172a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#portal {
+  font-family: "gg sans Normal";
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+}
+
+.loader {
+  width: 84px;
+  height: 84px;
+  position: relative;
+  overflow: hidden;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #172e48;
+  transform: translate(-50%, 100%) scale(0);
+  animation: push_4051 2s infinite ease-in;
+}
+
+.loader:after {
+  animation-delay: 1s;
+}
+
+@keyframes push_4051 {
+  0% {
+    transform: translate(-50%, 100%) scale(1);
+  }
+
+  15%,
+  25% {
+    transform: translate(-50%, 50%) scale(1);
+  }
+
+  50%,
+  75% {
+    transform: translate(-50%, -30%) scale(0.5);
+  }
+
+  80%,
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
